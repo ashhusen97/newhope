@@ -1,0 +1,63 @@
+#text-1col .bg {
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  opacity: 0.2;
+}
+#desc-img-text-5 .bg-wrap {
+  background-color: #f2f0ed;
+}
+#desc-text-6 .bg {
+  background-image: url("https://newhoperelief.org/11/wp-content/uploads/2014/04/1700x800.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  opacity: 1;
+}
+blockquote {
+  background-repeat: no-repeat;
+  background-position: 20px 24px;
+  font-size: 18px;
+  font-style: italic;
+  background-image: url(../images/quote-small.png);
+  background-size: 24px 20px;
+  padding: 20px 20px 20px 60px;
+  border-bottom-width: 1px;
+  border-top-width: 1px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+#testimonial-3col-2 .bg {
+  background-image: url("https://newhoperelief.org/11/wp-content/uploads/2014/04/testimonial-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  opacity: 0.75;
+}
+#blog-text .bg {
+  background-image: url("../images/bg-38.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.2;
+}
+#footer-logo-text-2 .bg {
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: auto;
+  opacity: 0.05;
+}
+.btn-dark-blue {
+  color: white !important;
+  background-color: #5cbdee !important;
+  transition: 0.5s all;
+}
+.btn-dark-blue:hover {
+  color: white !important;
+  background-color: #0071a9 !important;
+}
+h1,
+h2,
+h3 {
+  color: #0071a9 !important;
+}
