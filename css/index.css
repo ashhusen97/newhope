@@ -28,17 +28,22 @@ blockquote {
   margin-bottom: 20px;
 }
 #testimonial-3col-2 .bg {
-  background-image: url("https://newhoperelief.org/11/wp-content/uploads/2014/04/testimonial-bg.jpg");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
+  background: #fff; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #fff,
+    #fff
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #fff,
+    #fff
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   opacity: 0.75;
 }
 #blog-text .bg {
-  background-image: url("../images/bg-38.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-color: rgb(208, 255, 237);
   opacity: 0.2;
 }
 #footer-logo-text-2 .bg {
@@ -106,4 +111,120 @@ h3 {
   padding: 0;
   text-align: center;
   font-style: italic;
+}
+
+/* dropdown */
+.drop-down {
+  position: relative;
+  display: inline-block;
+  white-space: nowrap;
+}
+.nav-item {
+  margin-right: 30px;
+  font-size: 18px;
+  transition: 0.4s all;
+}
+.nav-item.active {
+  color: #023a6b;
+}
+.nav-item:hover {
+  color: #023a6b;
+}
+.drop-down-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 200px;
+  max-width: 400px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+
+  z-index: 10204;
+  border-top: 2px solid #023a6b;
+  transition: 0.5s all;
+  animation-name: opacity;
+  animation-duration: 400ms;
+  animation-timing-function: linear;
+}
+
+.drop-down:hover .drop-down-content {
+  display: block;
+}
+.dropdown-item {
+  display: block;
+  transition: 0.5s all;
+  padding: 10px 10px;
+  text-decoration: none;
+}
+.dropdown-item:hover {
+  text-decoration: none;
+  color: #0071a9;
+}
+.dropdown-item:hover {
+  transform: translateX(10px);
+}
+.fixed {
+  position: fixed !important;
+}
+.heading-section {
+  padding: 105px 10px;
+}
+.heading-section h1 {
+  position: relative;
+  font-size: 5.5em;
+  z-index: 11;
+  color: #fff !important;
+}
+.heading-section h1::before {
+  content: "";
+  width: 100%;
+  z-index: -111;
+  height: 20px;
+  background-color: rgba(0, 0, 139, 0.192);
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+}
+.top-bar {
+  padding: 5px 20px;
+  background: #023a6b;
+  top: 0;
+  z-index: 1031;
+}
+.top-bar a {
+  transition: 0.5s all;
+  color: rgba(255, 255, 255, 1);
+}
+.top-bar a:hover {
+  color: #5cbdee;
+  text-decoration: none;
+}
+
+header {
+  background: #00b4db; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #0083b0,
+    #00b4db
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #0083b0,
+    #00b4db
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+footer {
+  background-color: rgb(235, 253, 249);
+}
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@media (max-width: 575.98px) {
+  .drop-down-content {
+    position: relative;
+  }
 }

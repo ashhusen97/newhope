@@ -1,10 +1,5 @@
 /*------------------------------------------------------------------
-    Template: Weber - Multipurpose HTML Template with Page Builder
-    Author: Multifour
-    Profile: https://themeforest.net/user/multifour
-    Website: http://multifour.com
-    Version: v1.0
-    Support: http://support.multifour.com
+    
 -------------------------------------------------------------------*/
 
 /*------------------------------------------------------------------
@@ -5712,7 +5707,6 @@ hr.sep-vertical-x2 {
 .fixed-top,
 .show-on-scroll,
 .hide-on-scroll {
-  position: fixed;
   top: 0;
   right: 0;
   left: 0;
@@ -7767,8 +7761,7 @@ hr.sep-vertical-x2 {
   transform: translateY(-100%);
 }
 
-.section-carousel {
-}
+
 
 .border-bottom-container::after {
   content: "";
@@ -8359,7 +8352,7 @@ a.video-box:hover::after {
   border-bottom-width: 2px;
   border-bottom-style: solid;
   display: block;
-  -webkit-backface-visibility: visible;
+
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
   cursor: pointer;

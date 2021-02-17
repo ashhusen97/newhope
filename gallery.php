@@ -1,29 +1,23 @@
 <?php include('includes/header.php') ?>
 
-<header id="header-carousel"
-    class="section-carousel carousel-nav-right-bottom carousel-dots-left-bottom overall text-center dark">
-    <div class="carousel-single carousel-stretch owl-drag">
-        <div class="w-100 d-flex light align-items-center pt-75 pb-75 pt-md-200 pb-md-200" style="
-        background-image: url('images/banner_img2_.png');
-        background-size: cover;
-        background-position: center;
-      ">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12 col-lg-6 ml-auto"
-                        style="background-color: rgba(255, 255, 255, 0.7); padding: 10px">
-
-                        <h3>
-                            <strong><span class="text-uppercase">Gallery</span></strong>
-                        </h3>
+<header>
 
 
-                    </div>
-                </div>
+    <div class="container">
+        <div class="row heading-section">
+            <div class="col-12 col-lg-6 mr-auto ml-auto text-center">
+
+                <h1>
+                    <strong><span class="text-uppercase">Gallery</span></strong>
+                </h1>
+
+
             </div>
         </div>
-
     </div>
+
+
+
 </header>
 <section id="body" class="pt-20 pb-75 pt-lg-150 pb-lg-150 light">
     <div class="container">

@@ -42,9 +42,9 @@ window.addEventListener("load", function () {
     var height = $nav.outerHeight();
     var scrollTop = $window.scrollTop();
     if (scrollTop > 30) {
-      $nav.addClass("show");
+      $nav.addClass("show fixed");
     } else {
-      $nav.removeClass("show");
+      $nav.removeClass("show fixed");
     }
   });
 

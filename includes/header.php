@@ -19,6 +19,58 @@
 
 <body class="light-page">
     <div id="wrap">
+        <div class="top-bar">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-2 col-md-3">
+
+                        <a href="https://www.facebook.com/newhoperelief" class="mr-10"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-facebook" viewBox="0 0 16 16">
+                                <path
+                                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                            </svg></a>
+                        <a href="https://www.facebook.com/newhoperelief" class="mr-10"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-twitter" viewBox="0 0 16 16">
+                                <path
+                                    d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                            </svg></a>
+                        <a href="https://www.facebook.com/newhoperelief" class="mr-10"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-instagram" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                            </svg></a>
+                    </div>
+                    <div class="col-lg-7 col-md-6">
+                        <a href="tel:(+44)-7599369656"> (+44)-7599369656 </a>
+                        |
+                        <a href="mailto: info@newhoperelief.org">
+                            info@newhoperelief.org
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-md-4 order-lg-1">
+                        <a href="#" class="float-lg-right  mt-10 mt-lg-0 mt-md-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-wallet-fill" viewBox="0 0 16 16">
+                                <path
+                                    d="M1.5 2A1.5 1.5 0 0 0 0 3.5v2h6a.5.5 0 0 1 .5.5c0 .253.08.644.306.958.207.288.557.542 1.194.542.637 0 .987-.254 1.194-.542.226-.314.306-.705.306-.958a.5.5 0 0 1 .5-.5h6v-2A1.5 1.5 0 0 0 14.5 2h-13z" />
+                                <path
+                                    d="M16 6.5h-5.551a2.678 2.678 0 0 1-.443 1.042C9.613 8.088 8.963 8.5 8 8.5c-.963 0-1.613-.412-2.006-.958A2.679 2.679 0 0 1 5.551 6.5H0v6A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-6z" />
+                            </svg> Account No : 123456789
+                        </a>
+                    </div>
+                    <!-- start -->
+
+
+                    <!-- end -->
+
+                </div>
+            </div>
+
+
+        </div>
         <nav id="nav-menu-logo-social" class="navbar navbar-expand-lg  show-on-scroll shadow show">
             <div class="container-fluid">
                 <div class="row align-items-center">
@@ -33,49 +85,57 @@
                             <img src="./images/logo2_.png" height="70" alt="" class="mw-100 my-2" />
                         </a>
                     </div>
-                    <div class="col-lg-5 order-lg-1 collapse navbar-collapse main-menu-collapse">
-                        <ul class="navbar-nav">
+                    <div class="col-lg-10 order-lg-2 collapse navbar-collapse main-menu-collapse">
+                        <ul class="navbar-nav ml-auto">
                             <li class="nav-item active">
                                 <a class="nav-link" href="index.php">Home</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="about.php">About</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="projects.php">Projects</a>
+                            <li class="nav-item drop-down">
+                                <a class="nav-link" href="projects.php">Projects <svg xmlns="http://www.w3.org/2000/svg"
+                                        width="16" height="16" fill="currentColor" class="bi bi-chevron-down"
+                                        viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                    </svg></a>
+                                <div class="drop-down-content">
+                                    <a class="dropdown-item" href="#">UK</a>
+                                    <a class="dropdown-item" href="#">Global / Where we work</a>
+                                    <a class="dropdown-item" href="#">Types of charity</a>
+                                    <a class="dropdown-item" href="#">Charity in Islam</a>
+
+                                </div>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="gallery.php">Gallery</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Donation</a>
+                            <li class="nav-item drop-down">
+                                <a class="nav-link" href="donation.php">Donate <svg xmlns="http://www.w3.org/2000/svg"
+                                        width="16" height="16" fill="currentColor" class="bi bi-chevron-down"
+                                        viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
+                                    </svg></a>
+                                <div class="drop-down-content">
+                                    <a class="dropdown-item" href="#">Donate Online</a>
+                                    <a class="dropdown-item" href="#">Bank Transfer</a>
+                                    <a class="dropdown-item" href="#">Direct Debit</a>
+                                    <a class="dropdown-item" href="#">Gift Aid</a>
+                                    <a class="dropdown-item" href="#">By phone</a>
+                                    <a class="dropdown-item" href="#">Cash</a>
+                                    <a class="dropdown-item" href="#">Donation box</a>
+
+                                </div>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Contact</a>
                             </li>
+
                         </ul>
                     </div>
-                    <div class="col-lg-5 order-lg-3 collapse navbar-collapse main-menu-collapse justify-content-lg-end">
-                        <div class="d-inline-block inline-group navbar-text">
-                            <a href="https://twitter.com/newhoperelief"><svg xmlns="http://www.w3.org/2000/svg"
-                                    height="16" viewBox="0 0 16 16" width="16" class="icon svg-default">
-                                    <path
-                                        d="m16 2.57842783c-.5878969.26772602-1.2208722.44877814-1.8848389.52967377.6780537-.41603467 1.1983331-1.07571927 1.4434466-1.86156254-.6348535.38521729-1.3363855.66546287-2.0858132.81569761-.5972882-.65390635-1.4509597-1.06223667-2.3957269-1.06223667-1.81158659 0-3.28132891 1.50716263-3.28132891 3.36583604 0 .26387384.02817397.52004334.08452192.7665824-2.72817984-.14060431-5.14644597-1.47923438-6.76644949-3.51799687-.28267888.49885639-.44420966 1.07764536-.44420966 1.69399302 0 1.16720838.57944473 2.19766462 1.460351 2.80149272-.53718378-.01637174-1.04431532-.16949561-1.48758585-.41988685v.04141086c0 1.63139521 1.13165464 2.99217528 2.6342666 3.30034911-.27516582.07896954-.56535775.11845431-.86494101.11845431-.21130481 0-.41791395-.02022391-.61794917-.05970868.41791395 1.33670394 1.62939485 2.31034064 3.06626754 2.33634284-1.12320245.9033345-2.53941422 1.4416757-4.07677408 1.4416757-.26483536 0-.52685332-.0154087-.78323649-.0462261 1.45283794.9534128 3.17896343 1.5110148 5.03187181 1.5110148 6.03862179 0 9.33967249-5.12820509 9.33967249-9.57650171 0-.14638257-.0028174-.29276514-.0084522-.43625858.6414275-.47478031 1.198333-1.06705188 1.6369079-1.74214518"
-                                        fill="#00aaec" fill-rule="evenodd"></path>
-                                </svg></a>
-                            <a href="https://www.facebook.com/newhoperelief"><svg xmlns="http://www.w3.org/2000/svg"
-                                    height="16" viewBox="0 0 16 16" width="16" class="icon svg-default">
-                                    <path
-                                        d="m8.54611842 16h-7.66304125c-.48785295 0-.88307717-.3954695-.88307717-.8831324v-14.23379728c0-.48778708.3952863-.88307032.88307717-.88307032h14.23390773c.4876667 0 .8830151.39528324.8830151.88307032v14.23379728c0 .487725-.3954105.8831324-.8830151.8831324h-4.0772165v-6.19608178h2.0797387l.3114113-2.41472301h-2.39115v-1.54164808c0-.69911803.1941355-1.1755439 1.1966615-1.1755439l1.2786739-.00055875v-2.15974763c-.2211418-.0294274-.980176-.09517343-1.8632531-.09517343-1.84357263 0-3.10573228 1.12531866-3.10573228 3.19187953v1.78079226h-2.08507782v2.41472301h2.08507782z"
-                                        fill="#4460a0" fill-rule="evenodd"></path>
-                                </svg></a>
-                            <a href="tel:(+44)-7599369656"> (+44)-7599369656 </a>
-                            |
-                            <a href="mailto: info@newhoperelief.org">
-                                info@newhoperelief.org
-                            </a>
-                        </div>
-                    </div>
+
                 </div>
             </div>
             <div class="bg-wrap">

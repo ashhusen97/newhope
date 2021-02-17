@@ -179,6 +179,7 @@
                         <path d="m17 50h37v2h-37z"></path>
                         <path d="m17 56h37v2h-37z"></path>
                     </svg>
+
                     <h4 class="mb-10"><strong>We Need Your Help</strong></h4>
                     <p class="text-sentence">
                         LET’S STOP THIS HUNGER AND FULFIL THEIR HAPPINESS Education is the
@@ -296,7 +297,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12 text-center">
-                <h3><strong>Words from children</strong></h3>
+                <h3><strong>What people say about us</strong></h3>
                 <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 40 20" width="40"
                     class="mb-50 svg-primary">
                     <path d="m0 8h40v4h-40z" fill-rule="evenodd"></path>
