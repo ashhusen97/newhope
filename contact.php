@@ -9,7 +9,7 @@
             <div class="col-12 col-lg-6 mr-auto ml-auto text-center">
 
                 <h1>
-                    <strong><span class="text-uppercase">Contact Us</span></strong>
+                    <strong><span class="text-uppercase">Contact</span></strong>
                 </h1>
 
 

@@ -312,3 +312,49 @@ footer {
   border-radius: 12px;
   height: 100% !important;
 }
+
+/* quick links footer */
+.quick-links li {
+  display: block;
+  font-size: 20px;
+  transition: 0.5s all;
+  text-decoration: none;
+  margin-top: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.quick-links li a {
+  text-decoration: none;
+}
+.quick-links li:hover {
+  transform: translateX(10px) !important;
+  color: #023a6b !important;
+}
+
+/* donation */
+.steps {
+  margin-bottom: 30px;
+}
+.steps span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f2f0ed;
+  background-color: royalblue;
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+
+  position: relative;
+}
+.steps span:not(:nth-child(4)) {
+  margin-right: 50px;
+}
+.steps span:not(:nth-child(3))::after {
+  content: "";
+  width: 50px;
+  left: 60px;
+  height: 2px;
+  position: absolute;
+  background-color: #000;
+}
