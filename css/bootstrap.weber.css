@@ -4144,6 +4144,8 @@ button.close {
   margin: auto !important;
   position: relative;
   width: auto;
+  padding: 10px !important;
+  background-color: #fff;
   pointer-events: none;
 }
 
@@ -7760,8 +7762,6 @@ hr.sep-vertical-x2 {
   -webkit-transform: translateY(-100%);
   transform: translateY(-100%);
 }
-
-
 
 .border-bottom-container::after {
   content: "";

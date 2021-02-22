@@ -1,11 +1,20 @@
 <?php include('includes/header.php') ?>
 
-<header>
+<header style="background-image:url('https://probonoaustralia.com.au/wp-content/uploads/2020/05/Charity-heart-770.jpg');
+background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-attachment:fixed;
+ 
+  
+  ">
 
 
     <div class="container">
         <div class="row heading-section">
-            <div class="col-12 col-lg-6 mr-auto ml-auto text-center">
+            <div class="col-12 col-lg-6  text-center">
 
                 <h1>
                     <strong><span class="text-uppercase">ABOUT US</span></strong>

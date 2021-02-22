@@ -1,69 +1,70 @@
 <?php include('includes/header.php') ?>
 
-<header>
 
 
-    <div class="container">
-        <div class="row heading-section">
-            <div class="col-12 col-lg-6 mr-auto ml-auto text-center">
-
-                <h1>
-                    <strong><span class="text-uppercase">Gallery</span></strong>
-                </h1>
 
 
-            </div>
+<div class="container">
+    <div class="row ">
+        <div class="col-12 ">
+
+
+            <nav aria-label="breadcrumb text-white" class="ml-lg-150 mt-20 pl-50 pt-20"
+                style="background-color: cornflowerblue;">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.php" style="color: white;">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page" style="color: white;font-weight:800; ">
+                        Gallery</li>
+                </ol>
+            </nav>
         </div>
     </div>
-
-
-
-</header>
-<section id="body" class="pt-20 pb-75 pt-lg-150 pb-lg-150 light">
+</div>
+<section id="body" class="pt-20 pb-75 pt-lg-100 pb-lg-100 light">
     <div class="container">
 
         <div class="grid-container">
             <div>
                 <img class='grid-item grid-item-1'
-                    src='https://images.unsplash.com/photo-1544568100-847a948585b9?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ'
+                    src='https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8Y2hhcml0eXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60'
                     alt=''>
-                <p>"I'm so happy today!"</p>
+                <p>"Title"</p>
             </div>
             <div>
                 <img class='grid-item grid-item-2'
-                    src='https://images.unsplash.com/photo-1517423440428-a5a00ad493e8?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ'
+                    src='https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2hhcml0eXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60'
                     alt=''>
-                <p>"I see those nugs."</p>
+                <p>"Title"</p>
             </div>
             <div>
                 <img class='grid-item grid-item-3'
-                    src='https://images.unsplash.com/photo-1510771463146-e89e6e86560e?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ'
+                    src='https://images.unsplash.com/photo-1459183885421-5cc683b8dbba?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NXx8Y2hhcml0eXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60'
                     alt=''>
-                <p>"I love you so much!"</p>
+                <p>"Title"</p>
             </div>
             <div>
                 <img class='grid-item grid-item-4'
-                    src='https://images.unsplash.com/photo-1507146426996-ef05306b995a?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ'
+                    src='https://images.unsplash.com/photo-1459183885421-5cc683b8dbba?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NXx8Y2hhcml0eXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60'
                     alt=''>
-                <p>"I'm the baby of the house!"</p>
+                <p>"Title"</p>
             </div>
             <div>
                 <img class='grid-item grid-item-5'
-                    src='https://images.unsplash.com/photo-1530281700549-e82e7bf110d6?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ'
+                    src='https://images.unsplash.com/photo-1588774069410-84ae30757c8e?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTR8fGRvbmF0aW9ufGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60'
                     alt=''>
-                <p>"Are you gunna throw the ball?"</p>
+                <p>"Title"</p>
             </div>
             <div>
                 <img class='grid-item grid-item-6'
-                    src='https://images.unsplash.com/photo-1548199973-03cce0bbc87b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ'
+                    src='https://images.unsplash.com/photo-1588778117702-f92209c7e797?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjV8fGRvbmF0aW9ufGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60'
                     alt=''>
-                <p>"C'mon friend!"</p>
+                <p>"Title!"</p>
             </div>
             <div>
                 <img class='grid-item grid-item-7'
-                    src='https://images.unsplash.com/photo-1552053831-71594a27632d?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ'
+                    src='https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8aGFuZHN8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60'
                     alt=''>
-                <p>"A rose for mommy!"</p>
+                <p>"Title"</p>
             </div>
             <div>
                 <img class='grid-item grid-item-8'

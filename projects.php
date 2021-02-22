@@ -1,6 +1,13 @@
 <?php include('includes/header.php') ?>
 
-<header>
+<!-- <header style="
+background-image:url('https://www.technocrazed.com/wp-content/uploads/2015/12/Tree-wallpaper-to-use-as-background-16.jpg');
+background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-attachment:fixed;">
 
 
     <div class="container">
@@ -18,7 +25,23 @@
 
 
 
-</header>
+</header> -->
+<div class="container">
+    <div class="row ">
+        <div class="col-12 ">
+
+
+            <nav aria-label="breadcrumb text-white" class="ml-lg-150 mt-20 pl-50 pt-20"
+                style="background-color: cornflowerblue;">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.php" style="color: white;">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page" style="color: white;font-weight:800; ">
+                        Projects</li>
+                </ol>
+            </nav>
+        </div>
+    </div>
+</div>
 <section id="text-1col" class="pt-75 pb-75 pt-lg-50 pb-lg-150 light">
     <div class="container">
         <h3><strong>Our Projects</strong></h3>
