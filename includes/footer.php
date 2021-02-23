@@ -134,10 +134,24 @@ $(".owl-carousel").owlCarousel({
 });
 $(document).ready(function() {
     $('.step2_way').click(function() {
-        $('.step1').css('display', "none")
-        $('.step2').css('display', "block")
-        $('.step1_ind').removeClass('active');
-        $('.step2_ind').addClass('active');
+        if (!$('.step1 input').val()) {
+            // $('.step1 select').each(function() {
+            //     var select = $(this);
+            //     $(select).children('option').each(function() {
+            //         alert($(this).text())
+            //     })
+            // })
+            // alert("Please Enter amount")
+            $('.step1 input').addClass('warning')
+
+        } else {
+            $('.step1 input').removeClass('warning')
+            $('.step1').css('display', "none")
+            $('.step2').css('display', "block")
+            $('.step1_ind').removeClass('active');
+            $('.step2_ind').addClass('active');
+        }
+
     })
     $('.step1_way').click(function() {
         $('.step2').css('display', "none")
@@ -145,18 +159,46 @@ $(document).ready(function() {
         $('.step2_ind').removeClass('active');
         $('.step1_ind').addClass('active');
     })
-    $('.step2_way').click(function() {
+    $('.step2_way_3').click(function() {
+
         $('.step3').css('display', "none")
         $('.step2').css('display', "block")
         $('.step3_ind').removeClass('active');
         $('.step2_ind').addClass('active');
     })
     $('.step3_way').click(function() {
-        $('.step2').css('display', "none")
-        $('.step3').css('display', "block")
-        $('.step2_ind').removeClass('active');
-        $('.step3_ind').addClass('active');
+        var flag = false;
+        $('.step2 input').each(function() {
+
+            if (!$(this).val()) {
+                flag = true;
+                $(this).addClass('warning')
+            } else {
+                $(this).removeClass('warning')
+            }
+        })
+        if (!flag) {
+            $('.step2').css('display', "none")
+            $('.step3').css('display', "block")
+            $('.step2_ind').removeClass('active');
+            $('.step3_ind').addClass('active');
+        }
+
     })
+    $('.step4_way').click(function() {
+        if (!$('.state').is(":checked")) {
+            alert('Please select one method')
+        }
+    })
+    // $(".state").change(function() {
+    //     if ($(this).is(":checked")) { // check if the radio is checked
+    //         var val = $(this).val(); // retrieve the value
+    //         alert(val)
+    //     } else {
+    //         alert('hello')
+    //     }
+    // })
+
 })
 </script>
 </body>

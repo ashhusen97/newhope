@@ -139,7 +139,7 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="gallery.php">Gallery</a>
                             </li>
-                            <li class="nav-item drop-down">
+                            <!-- <li class="nav-item drop-down">
                                 <a class="nav-link" href="donation.php">Donate <svg xmlns="http://www.w3.org/2000/svg"
                                         width="16" height="16" fill="currentColor" class="bi bi-chevron-down"
                                         viewBox="0 0 16 16">
@@ -156,6 +156,9 @@
                                     <a class="dropdown-item" href="#">Donation Box</a>
 
                                 </div>
+                            </li> -->
+                            <li class="nav-item">
+                                <a class="nav-link" href="donation.php">Donate Now</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="volunteer.php">Volunteer</a>

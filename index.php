@@ -6,7 +6,7 @@
         <div class="item w-100 d-flex light align-items-center pt-800 pb-80 pt-md-80 pb-md-80" style="
         background-image: url('images/banner_img2_.png');
         background-size: cover;
-        background-position: center;
+        background-position: top;
       ">
             <div class="container">
                 <div class="row">

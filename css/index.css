@@ -489,3 +489,7 @@ footer {
   border-radius: 20px;
   transform: scale(1.1);
 }
+
+.warning {
+  border: 1px solid red !important;
+}

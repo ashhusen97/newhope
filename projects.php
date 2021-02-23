@@ -32,7 +32,7 @@ background-position: 50% 50%;
 
 
             <nav aria-label="breadcrumb text-white" class="ml-lg-150 mt-20 pl-50 pt-20"
-                style="background-color: cornflowerblue;">
+                style="background-color: #0071a9;">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="index.php" style="color: white;">Home</a></li>
                     <li class="breadcrumb-item active" aria-current="page" style="color: white;font-weight:800; ">
