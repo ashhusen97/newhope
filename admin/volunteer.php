@@ -1,21 +1,33 @@
 <?php include('header.inc.php');
 
-$sql = "select * from blog";
+$sql = "select * from volunteer";
 $res = mysqli_query($con, $sql);
 
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
+    if (isset($_GET['type'])) {
+        $type = $_GET['type'];
+        if ($type == 'approve') {
+            $update_sql = "Update volunteer set status = 1 where id = $id";
+            $ress_sql = mysqli_query($con, $update_sql);
+            if ($ress_sql) {
+                $_SESSION['status'] = "Volunteer Approved";
+                $_SESSION['status_code'] = "success";
+            }
+        } else {
+            $img_sql = "select image from volunteer where id = $id";
+            $res_sql = mysqli_query($con, $img_sql);
+            $row = mysqli_fetch_assoc($res);
+            $img = $row['image'];
 
-    $img_sql = "select image from blog where id = $id";
-    $res_sql = mysqli_query($con, $img_sql);
-    $row = mysqli_fetch_assoc($res);
-    $img = $row['image'];
+            unlink('../images/project/' . $img);
+            $sql = "delete from volunteer where id = $id";
 
-    unlink('../images/project/' . $img);
-    $sql = "delete from blog where id = $id";
+            if (mysqli_query($con, $sql)) {
 
-    if (mysqli_query($con, $sql)) {
-        echo '<script>window.location.href="blog.php"</script>';
+                echo '<script>window.location.href="volunteer.php"</script>';
+            }
+        }
     }
 }
 
@@ -26,8 +38,8 @@ if (isset($_GET['id'])) {
             <div class="col-md-12">
                 <div class="card">
                     <div class="card-header card-header-success">
-                        <h4 class="card-title ">Projects</h4>
-                        <a href="add_blog.php" class="btn btn-success">Add Projects</a>
+                        <h4 class="card-title ">Volunteer</h4>
+
                     </div>
                     <div class="card-body">
                         <div class="table-responsive">
@@ -37,13 +49,16 @@ if (isset($_GET['id'])) {
                                         ID
                                     </th>
                                     <th>
-                                        Title
+                                        Email
                                     </th>
                                     <th>
-                                        Description
+                                        Name
                                     </th>
                                     <th>
-                                        Image
+                                        Contact No
+                                    </th>
+                                    <th>
+                                        Social Media
                                     </th>
                                     <th>
                                         Upload Date
@@ -63,36 +78,47 @@ if (isset($_GET['id'])) {
                                         </td>
 
                                         <td>
-                                            <?= $row['title'] ?>
+                                            <?= $row['email'] ?>
                                         </td>
                                         <td>
-                                            <?= $row['description'] ?>
+                                            <?= $row['name'] ?>
                                         </td>
-
+                                        <td>
+                                            <?= $row['phone'] ?>
+                                        </td>
                                         <td>
                                             <?php
-                                                if ($row['image'] != '') {
+                                                if ($row['fb'] != '') {
                                                 ?>
-                                            <img src="../images/project/<?= $row['image'] ?>" alt=""
-                                                style="width:100px;height:100px">
+                                            <a href="<?= $row['fb'] ?>"><i class="material-icons">facebook</i></a>
                                             <?php
-                                                } else {
+                                                } else if ($row['insta'] != '') {
                                                 ?>
-                                            <img src="https://complianz.io/wp-content/uploads/2019/03/placeholder-300x202.jpg"
-                                                alt="" style="width:100px;height:100px">
+                                            <a href="<?= $row['insta'] ?>"><i class="material-icons">instagram</i></a>
+                                            <?php
+                                                } else if ($row['twitter'] != '') {
+                                                ?>
+                                            <a href="<?= $row['twitter'] ?>"><i class="material-icons">twitter</i></a>
                                             <?php
                                                 }
                                                 ?>
+
                                         </td>
+
                                         <td>
                                             <?= $row['upload_date'] ?>
 
                                         </td>
                                         <td>
-                                            <a href="edit_blog.php?id=<?= $row['id'] ?>"> <button
-                                                    class="btn btn-warning">Edit</button></a>
-                                            <a href="?id=<?= $row['id'] ?>"><button
-                                                    class="btn btn-danger">Delete</button></a>
+                                            <?php if ($row['status'] == 0) {
+                                                ?>
+                                            <a href="?id=<?= $row['id'] ?>&type=approve"> <button
+                                                    class="btn btn-warning">Approve</button></a>
+                                            <?php
+
+                                                } ?>
+                                            <a href="?id=<?= $row['id'] ?>&type=delete"><button
+                                                    class="btn btn-danger"><?php echo $row['status'] == 0 ? "Reject" : 'Delete'; ?></button></a>
                                         </td>
 
                                     </tr>

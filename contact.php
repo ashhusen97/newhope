@@ -1,4 +1,30 @@
-<?php include('includes/header.php') ?>
+<?php include('includes/header.php');
+include('./includes/connection.php');
+
+use PHPMailer\PHPMailer\PHPMailer;
+
+include_once "PHPMailer/PHPMailer.php";
+include_once "PHPMailer/SMTP.php";
+include_once "PHPMailer/Exception.php";
+if (isset($_POST['c_submit'])) {
+    $c_name = $_POST['name'];
+    $c_email = $_POST['email'];
+    $c_subject = $_POST['subject'];
+    $c_enquiry = $_POST['message'];
+    $date = date('yy-m-d');
+
+
+    $sql = "INSERT INTO contact (name,email,subject,message,upload_date) VALUES
+    ('$c_name','$c_email','$c_subject','$c_enquiry','$date')";
+
+    $res = mysqli_query($con, $sql);
+    if ($res) {
+
+        $_SESSION['status'] = "Request submitted Successfully! We ll get back to you shortly";
+        $_SESSION['status_code'] = "success";
+    }
+}
+?>
 
 
 <!-- <header>
@@ -77,7 +103,8 @@
                     </div>
                     <div class="form-group mt-3">
                         <button type="submit"
-                            class="button-contactForm wpcf7-form-control wpcf7-submit btn btn-default btn-sm">Send
+                            class="button-contactForm wpcf7-form-control wpcf7-submit btn btn-default btn-sm"
+                            name="c_submit">Send
                         </button>
                     </div>
                 </form>
@@ -108,7 +135,7 @@
                                 class="bi bi-telephone-fill" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd"
                                     d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
-                            </svg> &nbsp; Phone</h5>
+                            </svg> &nbsp; Contact No</h5>
                         <p>00 (440) 9865 562</p>
                         <hr class="light">
                     </div>
@@ -142,4 +169,4 @@
 </section>
 
 
-<?php include('./includes/footer.php') ?>
+<?php include('./includes/footer.php'); ?>

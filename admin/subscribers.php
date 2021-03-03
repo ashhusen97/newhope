@@ -2,13 +2,13 @@
 $sql = "select * from subscribers";
 $res = mysqli_query($con, $sql);
 if (isset($_GET['id'])) {
-  $id = $_GET['id'];
+    $id = $_GET['id'];
 
-  $sql = "delete from subscribers where id = $id";
+    $sql = "delete from subscribers where id = $id";
 
-  if (mysqli_query($con, $sql)) {
-    echo '<script>window.location.href="subscribers.php"</script>';
-  }
+    if (mysqli_query($con, $sql)) {
+        echo '<script>window.location.href="subscribers.php"</script>';
+    }
 }
 ?>
 <div class="content">
@@ -16,7 +16,7 @@ if (isset($_GET['id'])) {
         <div class="row">
             <div class="col-md-12">
                 <div class="card">
-                    <div class="card-header card-header-warning">
+                    <div class="card-header card-header-success">
                         <h4 class="card-title ">Subscribers</h4>
 
                     </div>
@@ -27,9 +27,7 @@ if (isset($_GET['id'])) {
                                     <th>
                                         ID
                                     </th>
-                                    <th>
-                                        Name
-                                    </th>
+
                                     <th>
                                         Email
                                     </th>
@@ -42,15 +40,13 @@ if (isset($_GET['id'])) {
                                 </thead>
                                 <tbody>
                                     <?php
-                  while ($row = mysqli_fetch_assoc($res)) {
-                  ?>
+                                    while ($row = mysqli_fetch_assoc($res)) {
+                                    ?>
                                     <tr>
                                         <td>
                                             <?= $row['id'] ?>
                                         </td>
-                                        <td>
-                                            <?= $row['name'] ?>
-                                        </td>
+
                                         <td>
                                             <?= $row['email'] ?>
                                         </td>
@@ -63,9 +59,9 @@ if (isset($_GET['id'])) {
                                         </td>
                                     </tr>
                                     <?php
-                  }
+                                    }
 
-                  ?>
+                                    ?>
                                 </tbody>
                             </table>
                         </div>

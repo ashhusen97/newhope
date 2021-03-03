@@ -16,7 +16,7 @@ if (isset($_GET['id'])) {
         <div class="row">
             <div class="col-md-12">
                 <div class="card">
-                    <div class="card-header card-header-warning">
+                    <div class="card-header card-header-success">
                         <h4 class="card-title ">Appointment</h4>
 
                     </div>

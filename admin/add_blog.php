@@ -6,30 +6,40 @@ if (isset($_POST['submit'])) {
     $title =  $_POST['title'];
     $description =  $_POST['editor1'];
     $image = $_FILES["blog-image"]["name"];
-    $target_dir = "../assets/img/Gallery/blogs/";
+    $size = $_FILES['blog-image']['size'];
+    $target_dir = "../images/project/";
     $target_file = $target_dir . basename($_FILES["blog-image"]["name"]);
     $date = date('yy-m-d');
-    $sql = "INSERT INTO blog (title, description,image,upload_date) VALUES ('$title','$description','$image','$date')";
+
+    if ($size > 0) {
+
+        $sql = "INSERT INTO blog (title, description,image,upload_date) VALUES ('$title','$description','$image','$date')";
+
+        move_uploaded_file($_FILES["blog-image"]["tmp_name"], $target_file);
+    } else {
+        $sql = "INSERT INTO blog (title, description,upload_date) VALUES ('$title','$description','$date')";
+    }
     if (mysqli_query($con, $sql)) {
+        $_SESSION['status'] = "Project Successfully added";
+
+        $_SESSION['status_code'] = "success";
+        // echo "<script>window.location.href = 'add_blog.php' </script>";
     } else {
         echo mysqli_error($con);
-    }
-    if (move_uploaded_file($_FILES["blog-image"]["tmp_name"], $target_file)) {
-        echo '<script>window.location.href="blog.php"</script>';
-    } else {
-        echo "Sorry, there was an error uploading your file.";
     }
 }
 
 ?>
+
 <div class="content">
+
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12">
                 <div class="card">
 
-                    <div class="card-header card-header-warning">
-                        <h4 class="card-title ">Add Blog</h4>
+                    <div class="card-header card-header-success">
+                        <h4 class="card-title ">Add Project</h4>
 
                     </div>
                     <div class="card-body">
@@ -63,4 +73,5 @@ if (isset($_POST['submit'])) {
         </div>
     </div>
 </div>
+
 <?php include('footer.inc.php') ?>

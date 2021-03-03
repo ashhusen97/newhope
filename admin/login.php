@@ -18,10 +18,15 @@ if (isset($_POST['login'])) {
             $_SESSION['is_login'] = 'yes';
             header('location:index.php');
         } else {
-            header('location:login.php?er=1');
+            $_SESSION['status'] = "Invalid username or Password";
+
+            $_SESSION['status_code'] = "error";
         }
     } else {
-        header('location:login.php?er=2');
+
+        $_SESSION['status'] = "Username or password cant be empty";
+
+        $_SESSION['status_code'] = "error";
     }
 }
 
@@ -46,18 +51,13 @@ if (isset($_POST['login'])) {
 
 <body>
 
-    <?php if (isset($_GET['er'])) {
 
-    ?>
-    <div class="flash_data" data-flashdata="<?= $_GET['er'] ?>"></div>
-    <?php
-    }
-    ?>
     <div class="wrapper d-flex align-items-center justify-content-center flex-column">
+
 
         <img src="../images/logo1_.png" alt="" class="img-fluid">
         <div class="col-lg-4 col-xs-12 col-sm-12 col-md-8">
-            <h1>Sign In</h1>
+            <h4 class="display-4 my-5 text-center">Sign In</h4>
             <form action="" method="POST">
                 <input type="email" name="email" placeholder="Email" class="form-control">
                 <input type="password" name="password" placeholder="Password" class="form-control">
@@ -73,7 +73,7 @@ if (isset($_POST['login'])) {
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
     </script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <script>
+    <!-- <script>
     const flashdata = $(".flash_data").data("flashdata");
     if (flashdata) {
         if (flashdata == 1) {
@@ -82,7 +82,26 @@ if (isset($_POST['login'])) {
             swal("Login Failed", "Username or password cant be empty", "error");
         }
     }
+    </script> -->
+    <?php
+
+    if (isset($_SESSION['status']) && $_SESSION['status'] != '') {
+        $status = $_SESSION['status'];
+        $status_code = $_SESSION['status_code'];
+    ?>
+
+    <script>
+    swal({
+        title: "<?= $status ?>",
+        icon: "<?= $status_code ?>",
+        button: 'OK'
+    });
     </script>
+    <?php
+        unset($_SESSION['status']);
+    }
+
+    ?>
 </body>
 
 </html>

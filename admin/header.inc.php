@@ -3,7 +3,7 @@ session_start();
 
 
 if (!isset($_SESSION['is_login']) && $_SESSION['is_login'] == '') {
-    echo "<script>window.location = 'login.php'</script>";
+    echo "<script>window.location = 'login'</script>";
 }
 include('../includes/connection.php');
 ?>
@@ -66,48 +66,54 @@ include('../includes/connection.php');
             style="display:none;visibility:hidden"></iframe></noscript>
 
     <div class="wrapper ">
-        <div class="sidebar" data-color="green" data-background-color="white"
+        <div class="sidebar" data-color="azure"
             data-image="https://bloximages.chicago2.vip.townnews.com/thenewsherald.com/content/tncms/assets/v3/editorial/8/af/8af2a990-f5b2-11e9-894e-5b922ebdd8a8/5db080578e8f7.image.jpg?resize=1200%2C1713">
 
-            <div class="logo"><a href="index.php" class="simple-text logo-normal px-5">
+            <div class="logo"><a href="index" class="simple-text logo-normal px-5">
                     <img src="../images/logo1_.png" alt="" class="img-fluid">
                 </a></div>
             <div class="sidebar-wrapper">
                 <ul class="nav">
                     <li class="nav-item active">
-                        <a class="nav-link " href="index.php?no=1">
+                        <a class="nav-link " href="index?no=1">
                             <i class="material-icons">dashboard</i>
                             <p>Dashboard</p>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="blog.php?no=2">
-
-                            <p>Blogs</p>
+                        <a class="nav-link " href="blog?no=2">
+                            <i class="material-icons">book</i>
+                            <p>Projects</p>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="podcast.php?no=3">
-
+                        <a class="nav-link" href="podcast?no=3">
+                            <i class="material-icons">money</i>
                             <p>Donations</p>
                         </a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link" href="testimonials.php?no=4">
-
+                        <a class="nav-link" href="volunteer?no=4">
+                            <i class="material-icons">group</i>
+                            <p>Volunteers</p>
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="testimonials?no=5">
+                            <i class="material-icons">comment</i>
                             <p>Testimonials</p>
                         </a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link" href="subscribers.php?no=5">
-
+                        <a class="nav-link" href="subscribers?no=6">
+                            <i class="material-icons">subscriptions</i>
                             <p>Subscriptions</p>
                         </a>
                     </li>
 
                     <li class="nav-item ">
-                        <a class="nav-link" href="contact.php?no=6">
-
+                        <a class="nav-link" href="contact?no=7">
+                            <i class="material-icons">headset</i>
                             <p>Contact</p>
                         </a>
                     </li>
@@ -148,8 +154,8 @@ include('../includes/connection.php');
                                 </a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link" href="http://example.com/" id="navbarDropdownMenuLink"
-                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <a class="nav-link" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
                                     <i class="material-icons">notifications</i>
                                     <span class="notification">5</span>
                                     <p class="d-lg-none d-md-block">
@@ -176,7 +182,7 @@ include('../includes/connection.php');
                                     <a class="dropdown-item" href="#">Profile</a>
                                     <a class="dropdown-item" href="#">Settings</a>
                                     <div class="dropdown-divider"></div>
-                                    <a class="dropdown-item" href="logout.php">Log out</a>
+                                    <a class="dropdown-item" href="logout">Log out</a>
                                 </div>
                             </li>
                         </ul>

@@ -1,4 +1,7 @@
-<?php include('includes/header.php') ?>
+<?php include('includes/header.php');
+
+
+?>
 
 <!-- <header style="
 background-image:url('https://www.technocrazed.com/wp-content/uploads/2015/12/Tree-wallpaper-to-use-as-background-16.jpg');

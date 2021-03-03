@@ -11,7 +11,7 @@
                                     class="bi bi-telephone-fill" viewBox="0 0 16 16">
                                     <path fill-rule="evenodd"
                                         d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
-                                </svg> Phone :</p>
+                                </svg> Contact :</p>
                         </td>
                         <td style="margin-left: 20px;">
                             <p>(+44)7599369656</p>
@@ -59,11 +59,12 @@
                     <h4 class="mb-30">
                         <strong>Subscribe To our news letter</strong>
                     </h4>
-
-                    <input type="email" class="form-control rounded-0 mb-20 shadow border-0" placeholder="Email"
-                        style="background:#fff;" />
-                    <a class="btn btn-dark-blue" href="#">Subscribe!</a>
+                    <form action="" method="POST">
+                        <input type="email" class="form-control rounded-0 mb-20 shadow border-0" placeholder="Email"
+                            style="background:#fff;" name="email" />
+                        <button class="btn btn-dark-blue" type="submit" name="sub1">Subscribe!</button>
                 </div>
+                </form>
             </div>
             <div class="col-md-12 col-lg-4 " style="text-align:left">
                 <div class="content-box    pb-20 pr-5 ">
@@ -115,6 +116,8 @@
 <script src="./js/owl.carousel.js"></script>
 <script src="./js/custom.js"></script>
 <script src="./js/index.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
 <script>
 $(".owl-carousel").owlCarousel({
     loop: true,
@@ -201,6 +204,26 @@ $(document).ready(function() {
 
 })
 </script>
+<?php
+if (isset($_SESSION['status'])) {
+
+    $status = $_SESSION['status'];
+    $status_code = $_SESSION['status_code'];
+?><script>
+// swal("Good job!", "You clicked the button!", "success");
+swal({
+    title: ' <?= $status ?>',
+    icon: '<?= $status_code ?>',
+    button: 'Ok'
+})
+</script>
+<?php
+
+    unset($_SESSION['status']);
+    unset($_SESSION['status_code']);
+}
+?>
+
 </body>
 
 </html>

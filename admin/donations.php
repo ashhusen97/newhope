@@ -1,7 +1,7 @@
 <?php include('header.inc.php');
 
 $sql = "select * from donations";
-$res = mysqli_query($con,$sql);
+$res = mysqli_query($con, $sql);
 
 
 
@@ -11,7 +11,7 @@ $res = mysqli_query($con,$sql);
         <div class="row">
             <div class="col-md-12">
                 <div class="card">
-                    <div class="card-header card-header-warning">
+                    <div class="card-header card-header-success">
                         <h4 class="card-title ">Donations</h4>
 
                     </div>
@@ -52,56 +52,52 @@ $res = mysqli_query($con,$sql);
 
                                 </thead>
                                 <tbody>
-                                    <?php 
-                        while($row = mysqli_fetch_assoc($res))
-                        {
-                          ?>
+                                    <?php
+                                    while ($row = mysqli_fetch_assoc($res)) {
+                                    ?>
                                     <tr>
                                         <td>
-                                            <?=$row['id']?>
+                                            <?= $row['id'] ?>
                                         </td>
                                         <td>
-                                            <?=$row['amount']." $"?>
+                                            <?= $row['amount'] . " $" ?>
                                         </td>
                                         <td>
-                                            <?=$row['type']?>
+                                            <?= $row['type'] ?>
                                         </td>
                                         <td>
-                                            <?=$row['name']?>
+                                            <?= $row['name'] ?>
                                         </td>
                                         <td>
-                                            <?=$row['email']?>
+                                            <?= $row['email'] ?>
                                         </td>
                                         <td>
-                                            <?=$row['phone']?>
+                                            <?= $row['phone'] ?>
                                         </td>
                                         <td>
-                                            <?=$row['address']?>
+                                            <?= $row['address'] ?>
                                         </td>
                                         <td>
-                                            <?=$row['notes']?>
+                                            <?= $row['notes'] ?>
                                         </td>
                                         <td>
-                                            <?=$row['payment_method']?>
+                                            <?= $row['payment_method'] ?>
                                         </td>
                                         <td>
-                                            <?php 
-                                          if($row['status'])
-                                          {
-                                            echo "Paid";
-                                          }
-                                          else
-                                          {
-                                            echo "Pending";
-                                          }
-                                          ?>
+                                            <?php
+                                                if ($row['status']) {
+                                                    echo "Paid";
+                                                } else {
+                                                    echo "Pending";
+                                                }
+                                                ?>
 
                                         </td>
                                     </tr>
                                     <?php
-                        }
-                        
-                        ?>
+                                    }
+
+                                    ?>
                                 </tbody>
                             </table>
                         </div>
@@ -112,4 +108,4 @@ $res = mysqli_query($con,$sql);
         </div>
     </div>
 </div>
-<?php include('footer.inc.php')?>
+<?php include('footer.inc.php') ?>

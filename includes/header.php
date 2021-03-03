@@ -1,3 +1,12 @@
+<?php
+session_start();
+include('connection.php');
+
+$sql = "select * from blog";
+$res = mysqli_query($con, $sql);
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -105,12 +114,12 @@
                     <div class="col-lg-10 order-lg-2 collapse navbar-collapse main-menu-collapse">
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item ">
-                                <a class="nav-link target text-decoration-none active" href="index.php">Home</a>
+                                <a class="nav-link target text-decoration-none active" href="index">Home</a>
                             </li>
                             <li class="nav-item drop-down">
-                                <a class="nav-link target" href="about.php">About <svg
-                                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                        class="bi bi-chevron-down" viewBox="0 0 16 16">
+                                <a class="nav-link target" href="about">About <svg xmlns="http://www.w3.org/2000/svg"
+                                        width="16" height="16" fill="currentColor" class="bi bi-chevron-down"
+                                        viewBox="0 0 16 16">
                                         <path fill-rule="evenodd"
                                             d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
                                     </svg></a>
@@ -122,25 +131,32 @@
                                 </div>
                             </li>
                             <li class="nav-item drop-down">
-                                <a class="nav-link target" href="projects.php">Projects <svg
+                                <a class="nav-link target" href="projects">Projects <svg
                                         xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                                         class="bi bi-chevron-down" viewBox="0 0 16 16">
                                         <path fill-rule="evenodd"
                                             d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
                                     </svg></a>
                                 <div class="drop-down-content">
-                                    <a class="dropdown-item" href="#">United Kingdom</a>
-                                    <a class="dropdown-item" href="#">Global / Where we work</a>
+                                    <?php
+                                    while ($row = mysqli_fetch_assoc($res)) {
+                                    ?>
+                                    <a class="dropdown-item" href="#"><?= $row['title'] ?></a>
+                                    <?php
+                                    }
+                                    ?>
+
+                                    <!-- <a class="dropdown-item" href="#">Global / Where we work</a>
                                     <a class="dropdown-item" href="#">Types of Charity</a>
-                                    <a class="dropdown-item" href="#">Charity in Islam</a>
+                                    <a class="dropdown-item" href="#">Charity in Islam</a> -->
 
                                 </div>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="gallery.php">Gallery</a>
+                                <a class="nav-link" href="gallery">Gallery</a>
                             </li>
                             <!-- <li class="nav-item drop-down">
-                                <a class="nav-link" href="donation.php">Donate <svg xmlns="http://www.w3.org/2000/svg"
+                                <a class="nav-link" href="donation">Donate <svg xmlns="http://www.w3.org/2000/svg"
                                         width="16" height="16" fill="currentColor" class="bi bi-chevron-down"
                                         viewBox="0 0 16 16">
                                         <path fill-rule="evenodd"
@@ -158,13 +174,13 @@
                                 </div>
                             </li> -->
                             <li class="nav-item">
-                                <a class="nav-link" href="donation.php">Donate Now</a>
+                                <a class="nav-link" href="donation">Donate Now</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="volunteer.php">Volunteer</a>
+                                <a class="nav-link" href="volunteer">Volunteer</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="contact.php">Contact</a>
+                                <a class="nav-link" href="contact">Contact</a>
                             </li>
 
                         </ul>

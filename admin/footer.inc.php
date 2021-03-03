@@ -47,8 +47,49 @@
 <!-- Material Dashboard DEMO methods, don't include it in your project! -->
 <script src="assets/demo/demo.js"></script>
 <script src="https://cdn.ckeditor.com/4.15.0/standard/ckeditor.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+<?php
+if (isset($_SESSION['status'])) {
+
+    $status = $_SESSION['status'];
+    $status_code = $_SESSION['status_code'];
+?><script>
+// swal("Good job!", "You clicked the button!", "success");
+swal({
+    title: ' <?= $status ?>',
+    icon: '<?= $status_code ?>',
+    button: 'Ok'
+})
+</script>
+<?php
+
+    unset($_SESSION['status']);
+    unset($_SESSION['status_code']);
+}
+?>
+
 <script>
 $(document).ready(function() {
+
+    function readURL(input) {
+
+
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function(e) {
+                $('#img_holder').attr('src', e.target.result);
+            }
+
+            reader.readAsDataURL(input.files[0]); // convert to base64 string
+        }
+    }
+
+    $("#ImgInp").change(function() {
+        readURL(this);
+    });
+
     var getUrlParameter = function getUrlParameter(sParam) {
         var sPageURL = window.location.search.substring(1),
             sURLVariables = sPageURL.split('&'),
@@ -441,9 +482,10 @@ $(document).ready(function() {
 
 });
 </script>
+
 </body>
 
 
-<!-- Mirrored from demos.creative-tim.com/material-dashboard/examples/dashboard.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 21 Aug 2020 14:47:29 GMT -->
+
 
 </html>

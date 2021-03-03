@@ -1,4 +1,63 @@
-<?php include('includes/header.php') ?>
+<?php include('includes/header.php');
+
+use PHPMailer\PHPMailer\PHPMailer;
+
+include_once "PHPMailer/PHPMailer.php";
+include_once "PHPMailer/SMTP.php";
+include_once "PHPMailer/Exception.php";
+
+if (isset($_POST['sub1'])) {
+    $email = $_POST['email'];
+    $date = date('yy-m-d');
+
+    $sql_check = "select * from subscribers where email = '$email'";
+    $res_check = mysqli_query($con, $sql_check);
+    if (mysqli_num_rows($res_check) > 1) {
+
+        $_SESSION['status'] = "Email already subscribed";
+        $_SESSION['status_code'] = "error";
+    } else {
+
+        $sql = "INSERT INTO subscribers (email,upload_date) VALUES
+        ('$email','$date')";
+
+        $res = mysqli_query($con, $sql);
+        if ($res) {
+            // $mail = new PHPMailer();
+
+
+            // try {
+            //     //Server settings
+
+            //     //Recipients
+            //     $mail->setFrom('sonz@axisforhealth.com', 'Axis for Health');
+            //     $mail->addAddress($e_email);
+
+            //     $mail->isHTML(true);
+            //     $mail->Subject = 'Order Placed';
+            //     $mail->Body = "<p>Hi</p><p>Thanks for contacting Axis for Health.<p/><p>I'll be responding to your email shortly. We are here to support you in your desire to attain well being and vitality./p><p>Sonia Barnes <br/>Founder<br/>Axis for Health</p>";
+
+            //     if ($mail->send()) {
+            //          echo '<script>window.location.href="index.php?s=1"</script>';
+
+            //     }
+            //     else
+            //     {
+            //         echo $mail->ErrorInfo;
+            //     }
+            // } catch (Exception $e) {
+            //     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+            // }
+
+            $_SESSION['status'] = "Email subscription successful";
+            $_SESSION['status_code'] = "success";
+        } else {
+            echo mysqli_error($con);
+        }
+    }
+}
+
+?>
 
 <header id="header-carousel"
     class="section-carousel carousel-nav-right-bottom carousel-dots-left-bottom overall text-center dark">
@@ -309,8 +368,10 @@
                         Stay informed on new causes and up-coming organization updates.
                         Don’t miss things!
                     </p>
-                    <input type="email" class="form-control rounded-0 mb-20" placeholder="Email" />
-                    <a class="btn btn-dark-blue" href="#">Subscribe!</a>
+                    <form action="" method="POST">
+                        <input type="email" class="form-control rounded-0 mb-20" placeholder="Email" name="email" />
+                        <button class="btn btn-dark-blue" type="submit" name="sub1">Subscribe!</button>
+                    </form>
                 </div>
             </div>
         </div>

@@ -25,7 +25,7 @@ if (isset($_GET['id'])) {
         <div class="row">
             <div class="col-md-12">
                 <div class="card">
-                    <div class="card-header card-header-warning">
+                    <div class="card-header card-header-success">
                         <h4 class="card-title ">Testimonials</h4>
                         <a href="add_testimonial.php" class="btn">Add testimonial</a>
                     </div>
@@ -80,7 +80,7 @@ if (isset($_GET['id'])) {
                                         </td>
                                         <td>
                                             <a href="edit_testimonial.php?id=<?= $row['id'] ?>"> <button
-                                                    class="btn btn-warning">Edit</button></a>
+                                                    class="btn btn-success">Edit</button></a>
                                             <a href="?id=<?= $row['id'] ?>"><button
                                                     class="btn btn-danger">Delete</button></a>
                                         </td>

@@ -27,8 +27,8 @@ if (isset($_GET['id'])) {
             <div class="col-md-12">
                 <div class="card">
                     <div class="card-header card-header-warning">
-                        <h4 class="card-title ">Podcasts</h4>
-                        <a href="add_podcast.php" class="btn">Add Podcast</a>
+                        <h4 class="card-title ">Donations</h4>
+
                     </div>
                     <div class="card-body">
                         <div class="table-responsive">

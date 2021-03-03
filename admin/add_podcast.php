@@ -30,7 +30,7 @@ if (isset($_POST['submit'])) {
             <div class="col-md-12">
                 <div class="card">
 
-                    <div class="card-header card-header-warning">
+                    <div class="card-header card-header-success">
                         <h4 class="card-title ">Add Podcast</h4>
 
                     </div>

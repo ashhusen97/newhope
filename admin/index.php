@@ -1,4 +1,4 @@
-<?php include('header.inc.php')?>
+<?php include('header.inc.php') ?>
 <div class="content">
     <div class="container-fluid">
         <div class="row">
@@ -57,7 +57,7 @@
                 <div class="card card-stats">
                     <div class="card-header card-header-info card-header-icon">
                         <div class="card-icon">
-                            <i class="material-icons">drop</i>
+                            <i class="material-icons">group</i>
                         </div>
                         <p class="card-category">Followers</p>
                         <h3 class="card-title">+245</h3>
@@ -80,7 +80,8 @@
                         <h4 class="card-title">Daily Sales</h4>
                         <p class="card-category">
                             <span class="text-success"><i class="fa fa-long-arrow-up"></i> 55% </span> increase in today
-                            sales.</p>
+                            sales.
+                        </p>
                     </div>
                     <div class="card-footer">
                         <div class="stats">
@@ -441,4 +442,4 @@
         </div>
     </div>
 </div>
-<?php include('footer.inc.php')?>
+<?php include('footer.inc.php') ?>
